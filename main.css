@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #282C34;
+  color: #ABB2BF;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #2C313C;
+  border-radius: 10px;
+}
+
+main > * {
+  background-color: #3B4048;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.meaning,
+.color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.meaning_card,
+.color_card {
+  font-size: 1.5rem;
+  min-width: 200px;
+}
+
+.arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.arrows-yes,
+.arrows-no {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+} 
+
+.arrows-yes{
+  background-color: #98C379;
+  color: #282C34;
+}
+
+.arrows-no{
+  background-color: #E06C75;
+  color: #282C34;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.cards > div {
+  height: 8rem;
+  width: 20rem;
+  border: 2px solid #4B5263;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: lowercase;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #282C34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: lowercase;
+
+  #startBtn{
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #endscore{
+    display: none;
+  }
+}
+
+#stopBtn{
+  padding: 1rem 2rem;
+  background-color: #dd4141;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.status{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+/* Difficulty Selection Menu Styles */
+.difficulty-selection {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.difficulty-selection label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #ABB2BF;
+}
+
+.difficulty-selection select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}

@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fasz</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Color match</title>
 </head>
 <body>
-    <script type="module" src="main.js"></script>
-    <script src="colornames.js"></script>
+    <!-- 
+    Difficulty levels:
+
+    Commodore Amiga (~32,768 colors) - colors_expert.json (=30,238)
+    Commodore 64 with advanced color tricks (~4,000-5,000 colors) - colors_hard.json (=4,514)
+    ZX Spectrum with Color Clash handling (~2,800 colors) - colors_medium.json (=2,870)
+    Atari 2600 with NTSC/PAL artifacting (~48 colors) - colors_easy.json (=128)
+    IBM CGA with shades (~20 colors) - colors_easier.json (=20)
+    Apple II (~8 colors) - colors_classic.json (=8)
+    IBM Monochrome Display Adapter (~2 colors) - colors_twobit.json (=2)
+
+     -->
+    <div class="cover">
+        <h3 id="endscore">Score: </h3>
+        <button id="startBtn">Start Game</button>
+        <!-- Difficulty Selection Menu -->
+        <div class="difficulty-selection">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="colors_expert.json">Commodore Amiga | expert</option>
+                <option value="colors_hard.json">Commodore 64 | hard</option>
+                <option value="colors_medium.json">ZX Spectrum | medium</option>
+                <option value="colors_easy.json">Atari 2600 | easy</option>
+                <option value="colors_easier.json">IBM CGA | easier</option>
+                <option value="colors_classic.json">Apple II | classic</option>
+                <option value="colors_twobit.json">IBM Monochrome | 2Bit</option>
+            </select>
+        </div>
+    </div>
+    <main>
+        <div class="game">
+            <div class="cards">
+                <div class="color">
+                    <h2 id="color_card-text"></h2>
+                </div>
+                <div class="meaning">
+                    <h2 id="meaning_card-text"></h2>
+                </div>
+            </div>
+            
+            <div class="arrows">
+                <div class="arrows-no">
+                    <p>NO</p>
+                </div>
+                <div class="arrows-yes">
+                    <p>YES</p>
+                </div>
+            </div>
+            <div class="status">
+                <div class="timer">
+                    <h2>Timer:</h2>
+                    <p id="timer">10</p>
+                </div>
+                <div class="score">
+                    <h2>Score:</h2>
+                    <p id="score">0</p>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <button id="stopBtn">Stop Game</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
 </body>
+
 </html>
