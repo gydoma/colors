@@ -21,7 +21,7 @@
 | **Hard**         | Commodore 64 with color tricks | 4,514             |
 | **Medium**       | ZX Spectrum with Color Clash   | 2,870             |
 | **Easy**         | Atari 2600 with artifacting    | 128               |
-| **Easier**       | IBM CGA with shades            | 20                |
+| **Easier**       | IBM CGA with shades            | 48                |
 | **Classic**      | Apple II                       | 8                 |
 | **2Bit**         | IBM Monochrome Display Adapter | 2                 |
 
