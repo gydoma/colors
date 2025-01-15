@@ -11,14 +11,24 @@ main {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: #2C313C;
   border-radius: 10px;
+  margin-top: 200px;
 }
 
 main > * {
   background-color: #3B4048;
   border-radius: 10px;
   padding: 1rem;
+  min-width: 680px;
+}
+
+@media screen and (max-width: 680px) {
+  main {
+    margin-top: 100px;
+    min-width: 0;
+    
+  }
+  
 }
 
 .meaning,
@@ -56,13 +66,24 @@ main > * {
 .arrows-yes{
   background-color: #98C379;
   color: #282C34;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: 10px;
 }
 
 .arrows-no{
   background-color: #E06C75;
   color: #282C34;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: 10px;
 }
 
+
+.arrows-yes:hover,
+.arrows-no:hover {
+  filter: contrast(1.2) brightness(0.8);
+}
 .cards{
   display: flex;
   flex-direction: row;
@@ -73,6 +94,7 @@ main > * {
   height: 8rem;
   width: 20rem;
   border: 2px solid #4B5263;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +120,9 @@ main > * {
 
   #startBtn{
     padding: 1rem 2rem;
-    background-color: #fff;
+    background-color: #4B5263;
+    color: #fff;
+    font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
   }

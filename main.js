@@ -23,21 +23,21 @@ difficultySelect.addEventListener("change", (event) => {
     });
 });
 
-let started = false;
-let score = 0;
-let correctCount = 0;
-let incorrectCount = 0;
-let totalGuesses = 0;
+let started             = false;
+let score               = 0;
+let correctCount        = 0;
+let incorrectCount      = 0;
+let totalGuesses        = 0;
 
-const colorCss = document.getElementById("color_card-text");
-const meaningCss = document.getElementById("meaning_card-text");
-const startButton = document.getElementById("startBtn");
-const stopButton = document.getElementById("stopBtn");
-const scoreText = document.getElementById("score");
-const arrowsNo = document.querySelector(".arrows-no");
-const arrowsYes = document.querySelector(".arrows-yes");
-const timer = document.getElementById("timer");
-const cover = document.querySelector(".cover");
+const colorCss          = document.getElementById("color_card-text");
+const meaningCss        = document.getElementById("meaning_card-text");
+const startButton       = document.getElementById("startBtn");
+const stopButton        = document.getElementById("stopBtn");
+const scoreText         = document.getElementById("score");
+const arrowsNo          = document.querySelector(".arrows-no");
+const arrowsYes         = document.querySelector(".arrows-yes");
+const timer             = document.getElementById("timer");
+const cover             = document.querySelector(".cover");
 
 window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
@@ -166,7 +166,7 @@ function resetGame() {
     colorCss.dataset.textName = textName;
     
     meaningCss.textContent = fakeName;
-    countDownDate = new Date().getTime() + 10000;
+    countDownDate = new Date().getTime() + 10000000;
     scoreText.textContent = score;
 }
 
