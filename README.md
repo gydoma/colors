@@ -37,7 +37,7 @@
     ```
 2. **Navigate to the project directory:**
     ```bash
-    cd colorgeci
+    cd colors
     ```
 3. **Open `index.html` in your preferred web browser.**
 
